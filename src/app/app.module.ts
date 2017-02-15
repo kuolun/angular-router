@@ -7,10 +7,12 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes = [
   { path: '', component: HomeComponent },
-  { path: 'contacts', component: ContactsComponent }
+  { path: 'contacts', component: ContactsComponent },
+  { path: 'contacts/:id', component: ContactComponent }
 ];
 
 
@@ -18,7 +20,8 @@ const routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactsComponent
+    ContactsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
